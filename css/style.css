@@ -1,0 +1,402 @@
+		ul#album{
+				width:700px;
+				margin:0 auto;
+				padding:50px;
+				overflow:hidden;
+				list-style:none;
+			}
+
+
+			
+
+			ul#album li{
+				float:left;
+				width:200px;
+				height:200px;
+				margin:10px;
+				border:5px solid white;
+				background-color:grey;
+				box-shadow: 1px 0px 3px rgba(0,0,0,.4);
+				-webkit-transition:all .4s ease-in;
+			}
+
+			ul#album li span{
+				opacity:0;
+				color:white;
+				text-shadow:1px 1px 1px black;
+				background-color:grey;
+				font-size:9px;
+				line-height:380px;
+				padding:5px;
+
+
+			}
+
+			ul#album li:hover span{
+				opacity:1;
+
+			}
+
+
+			ul#album li:hover {
+				-webkit-transform:scale(1.5);
+
+			}
+
+
+			ul#album li#f1{
+				background:url(../imagens/iconMotor.png);
+				background-position:50% 50%;
+				background-size:200px 200px;
+				background-color:white;
+				opacity:0.8;
+				-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+				-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+				box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+			
+
+			}
+
+			ul#album li#f2{
+				background:url(../imagens/iconSuspensao.png);
+				background-position:50% 50%;
+				background-size:200px 200px;
+				background-color:white;
+				opacity:0.8;
+				-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+				-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+				box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+			}
+
+				ul#album li#f3{
+				background:url(../imagens/iconFreio.png);
+				background-position:50% 50%;
+				background-size:200px 200px;
+				background-color:white;
+				opacity:0.8;
+				-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+				-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+				box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+			}
+
+				ul#album li#f4{
+				background:url(../imagens/iconEmbreagem.png);
+				background-position:50% 50%;
+				background-size:200px 200px;
+				background-color:white;
+				opacity:0.8;
+				-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+				-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+				box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+				
+			}
+
+			ul#album li#f5{
+				background:url(../imagens/iconAlinhamento.png);
+				background-position:50% 50%;
+				background-size:200px 200px;
+				background-color:white;
+				opacity:0.8;
+				-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+				-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+				box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+			}
+
+				ul#album li#f6{
+				background:url(../imagens/iconBalanceamento.jpg);
+				background-position:50% 50%;
+				background-size:200px 200px;
+				background-color:white;
+				opacity:0.8;
+				-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+				-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+				box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+			}
+
+
+
+body{
+
+    	font-family:Arial, sans-serif;	
+		background-color:grey;
+
+
+    }
+
+
+.w3 {
+	max-width:500px;
+	border:1px solid yellow;
+	margin-left:180px;
+	-webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+	-moz-box-shadow:    9px 7px 5px rgba(50, 50, 50, 0.77);
+	box-shadow:         9px 7px 5px rgba(50, 50, 50, 0.77);
+
+} 
+
+
+
+#icone2 {
+	cursor: pointer;
+	padding: 15px;
+	position: absolute;
+	z-index: 1;
+}
+
+#check2{
+	display: none;
+	background-color: white;
+}
+
+
+.barra2{
+	background-color: grey;
+	height: 100%;
+	width: 300px;
+	position: absolute;
+	left: -300px;
+	transition: all .2s linear;
+}
+
+ .barra2 .link2{
+	list-style: none;
+	background-color: grey;
+}
+
+nav{
+	width: 100%;
+	position: absolute;
+	top: 60px;
+}
+nav a{
+	text-decoration: none;
+}
+
+  .link2{
+	color: white;
+	font-family: 'Arial';
+	font-size: 12pt;
+	padding: 20px;
+	border-bottom: 2px solid blue;
+	transition:  all .2s linear;
+	opacity: 0;
+	margin-top: 200px;
+}
+ .link2:hover{
+	background-color: grey;
+	color: yellow;
+	border-bottom: 2px solid yellow;
+
+}
+
+.menup:hover .barra2 nav a .link2{
+		opacity: 1;
+		margin-top: 0;
+		transition-delay: .2s;
+}
+.menup:hover  .barra2{
+		transform: translateX(300px);
+
+}
+
+
+
+
+div#idinterface{
+width:900px;
+background-color:white;
+margin: -2px auto 10px auto;
+padding: 10px;
+
+}
+
+
+
+header#idcabecalho h1{
+color: yellow;
+margin-left: 380px;
+font-size:20px;
+font-family:'FonteLogo';
+
+text-shadow: 1px 1px 1px black;
+margin-bottom:0px;
+}
+
+header#idcabecalho h2{
+color: yellow;
+margin-left: 360px;
+font-family: 'FonteLogo';
+text-shadow: 1px 1px 1px black;
+}
+
+
+
+header#idcabecalho img{
+width: 918px;	
+height:150px;
+
+
+}
+
+ header#idcabecalho{
+ 	border-bottom: 1px yellow solid;
+ 	margin-top:-10px; 
+ 	margin-left:-10px; 
+ 	width: 917px;	
+ 	height:150px;
+ 	background-color:blue;
+ 	border: 2px solid yellow; 
+ 
+ }
+
+
+
+ nav#menu{
+		display:block;
+	}
+
+
+
+   nav#menu ul{
+   	list-style:none;
+   	color:yellow;
+   	text-transform:uppercase;
+   	position:absolute;
+   	top:-20px;
+   	left:300px;
+
+
+   }
+
+
+
+/*formatação nos itens  do menu*/
+   nav#menu li{
+	display:inline-block;
+	background-color:blue;
+	padding:10px;
+	margin: 2px;
+	transition:background-color 1s;
+
+  	
+   }
+ 
+   nav#menu h1{
+	display:none;
+
+   }
+
+nav#menu li:hover{
+	background-color:yellow;
+}
+
+
+nav#menu a{
+	 text-decoration:none;	
+	 color:yellow;
+}
+
+
+nav#menu a:hover{
+	color:blue;
+	text-decoration:underline;
+
+
+
+}
+
+article#noticia_principal h2{
+		font-size:12pt;
+		color:yellow;
+		background-color:blue;
+		padding:5px 0px 5px 10px;
+		margin:10px 0px 10px 0px;
+
+}
+
+
+
+
+footer#rodape{
+	clear:both;/*faz com que o rodape fique fora da divisao 
+	entre o section e o aside */
+	border:2px solid yellow;
+	background: blue;
+	width: 918px;
+	margin-left: -10px;
+	margin-bottom: -10px;
+
+}
+
+footer#rodape p{
+
+text-align:center;
+color:yellow;
+
+}
+
+
+table#tabelaespec{
+	border: 1px solid grey;
+	border-spacing:0px;
+	margin:0px auto 0px auto;
+}
+
+
+table#tabelaespec td{
+	border: 1px solid grey;
+	padding:10px;
+}
+
+
+table#tabelaespec td#col1{
+	vertical-align:top;
+	text-align:center;
+}
+
+
+
+table#tabelaespec td.ce{
+   color:white;
+   background-color:grey;
+   vertical-align:top;
+   font-weight: bold;
+}
+
+table#tabelaespec td.cd{
+   background-color:#cecece;
+}
+
+table#tabelaespec caption {
+	color:grey;
+	font-size:13pt;
+	font-weight:bold;
+
+}
+
+table#tabelaespec caption span {
+
+	color:black;
+	font-size:13px;
+	display:block;
+	float:right;
+	margin-top:10px;
+}
+
+
+.direita{
+	text-align:right;
+}
+
+
+header#cabecalho-artigo h3{
+	font-size:12px;
+	color:#606060;
+}
+
+
+#formContato{
+	width: 500px;
+	margin:0px auto 10px auto;
+	position: center;
+}
